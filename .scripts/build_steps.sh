@@ -6,6 +6,9 @@
 # benefit from the improvement.
 
 set -xeuo pipefail
+echo "getconf PAGE_SIZE:"
+getconf PAGE_SIZE
+echo "------------------"
 export PYTHONUNBUFFERED=1
 export FEEDSTOCK_ROOT="${FEEDSTOCK_ROOT:-/home/conda/feedstock_root}"
 export RECIPE_ROOT="${RECIPE_ROOT:-/home/conda/recipe_root}"
